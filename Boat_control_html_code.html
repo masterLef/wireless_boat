@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MiniBoat Project</title>
+    <style type="text/css">
+        h1 {
+            position: relative;
+            left: 5px;
+            text-shadow: 4px 4px #000099;
+            color: #00BDEC;
+        }
+        
+        body {
+            background-color: #202020;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: 280px;
+            background-position: 10px 150px;
+        }
+        
+        .button1, .button2 {
+            background-color: #00ff00;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 101px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        .button3, .button4 {
+            background-color: #0000ff;
+            border: none;
+            border-radius: 10px;
+            padding: 63px 31px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        .button5, .button6 {
+            border: none;
+            border-radius: 10px;
+            padding: 23px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>~~~~~~~~~~~~~ &#9875 Pamvotis Lake Patrol &#9875 ~~~~~~~~~~~~</h1>
+    <br>
+    <a class="button1" href="/FWD" style="position:absolute; color:blue; top:100px; font-weight: bold; left:317px;"> FWD </a>
+    <a class="button2" href="/REV" style="position:absolute; color:blue; top:315px;  font-weight: bold; left:317px;"> REV </a>
+    <a class="button3" href="/RIG" style="position:absolute; color:white; top:160px; font-weight: bold; left:486px;"> &#10097; </a>
+    <a class="button4" href="/LFT" style="position:absolute; color:white; top:160px; font-weight: bold; left:316px;"> &#10096; </a>
+    <a class="button5" href="/STR" style="position:absolute; color:black; top:160px; font-weight: bold; left:400px; background-color: #ff6600;"> STR </a>
+    <a class="button6" href="/STP" style="position:absolute; color:black; top:240px; font-weight: bold; left:400px; background-color: #ff0000;"> STP </a>
+
+    <div style="width:210px; height:160px; border:3px solid #fff; position:absolute; left:13px;"></div>
+    <form action="" method="get" style="position: absolute; left:30px; top:100px;">
+        <h2 style="color:red">Speed Controller</h2>
+        <input type="range" name="power" min="60" max="100" step="5" style="background-color: red;">
+        <input type="submit" name="submit" formaction="/speed" value="Set Speed" style="background-color:yellow; font-weight: bold; border:none; padding: 20px; 35px; position:absolute; left:38px; top:105px;" />
+    </form>
+    
+    <meter id="m1" value="100" min="0" max="100" low="35" high="75" optimum="95" style="width:200px; height:40px; position:absolute; left:620px; top:110px; z-index:-1;"> </meter>
+    <p id="bt" style="position:absolute; left:665px; top:105px; font-weight: bold;">Gauge</p>
+</body>
+</html>
